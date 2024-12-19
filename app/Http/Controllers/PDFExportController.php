@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade\PDF;
 
 
+
 class PDFExportController extends Controller
 {
 
@@ -23,6 +24,7 @@ class PDFExportController extends Controller
          // Return the generated PDF as a download
          return $pdf->download('clientreport.pdf');
      }
+
 
 
      public function exportfonctionPDF()
