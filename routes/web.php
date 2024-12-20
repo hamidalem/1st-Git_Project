@@ -6,6 +6,7 @@ use App\Http\Controllers\FonctionController;
 use App\Http\Controllers\RegisteredUserController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\PDFExportController;
+use App\Http\Controllers\QrCodeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -50,11 +51,14 @@ Route::post('/logout',[SessionController::class,'destroy'])->name('logout');
 
 
 //pdf
-Route::get('/exportclientpdf', [PDFExportController::class, 'exportclientPDF'])->name('exportclientpdf');
-Route::get('/exportfonctionpdf', [PDFExportController::class, 'exportfonctionPDF'])->name('exportfonctionpdf');
+Route::get('/exportclientpdf', [PDFExportController::class, 'exportClientWithQrcode'])->name('exportclientpdf');
+Route::get('/exportfonctionpdf', [PDFExportController::class, 'exportFonctionWithQrcode'])->name('exportfonctionpdf');
 
 //excel
 Route::get('/exportclientexcel', [ClientController::class, 'export'])->name('exportclientexcel');
 Route::get('/exportfonctionexcel', [FonctionController::class, 'export'])->name('exportfonctionexcel');
+
+
+
 
 

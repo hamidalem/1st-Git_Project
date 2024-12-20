@@ -67,12 +67,10 @@ thead{
     </style>
     <table class="t1">
         <tr>
-            <td class="ttd" style="width:20%"><img src="C:\laragon\www\TPHIS\resources\views\images\naftal.png"></td>
-            <td class="ttd" style="width:60%"><h3>Fonctions Report</h3></td>
- <td>
-<pre>Classement : Br.CBR
-Reference : 594 000
-</pre></td>
+            <td class="ttd" style="width:10%"><img src="C:\laragon\www\TPHIS\resources\views\images\naftal.png"></td>
+            <td class="ttd" style="width:80%"><h3>Fonctions Report</h3></td>
+
+<td > <img src="data:image/png;base64,{{ $base64Image }}" alt="QR Code"></td>
         </tr>
     </table>
 
