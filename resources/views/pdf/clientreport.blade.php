@@ -90,7 +90,7 @@ thead{
         </thead>
         <tbody>
             @foreach ($data as $item)
-                <tr>
+                <tr style="text-transform: uppercase;">
                     <th scope="row">{{ $loop->iteration }}</th>
                     <td>{{ $item->idclient }}</td>
                     <td>{{ $item->FirstName }}</td>

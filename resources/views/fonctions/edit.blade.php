@@ -43,7 +43,7 @@
     <div class="mb-3">
 
       <label for="Fonction" class="form-label">Fonction</label>
-      <input type="text" class="form-control" id="Fonction"  name="Fonction" value="{{ $fonction->Fonction }}" >
+      <input type="text" class="form-control" id="Fonction"  name="Fonction" value="{{ $fonction->Fonction }}" style="text-transform: uppercase;" >
     </div>
 
     <button type="submit" class="btn btn-success">Save</button>

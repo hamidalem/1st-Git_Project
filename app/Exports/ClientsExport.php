@@ -55,6 +55,7 @@ class ClientsExport implements FromCollection, WithHeadings, WithMapping, WithSt
             'D'=>['alignment'=>['horizontal' =>'center']],
             'E'=>['alignment'=>['horizontal' =>'center']],
             'F'=>['alignment'=>['horizontal' =>'center']]
+
         ];
     }
 

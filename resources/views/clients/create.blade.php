@@ -35,16 +35,21 @@
     <div class="container-sm p-5 my-5 border">
     <div class="mb-3">
       <label for="FirstName" class="form-label">First Name</label>
-      <input type="text" class="form-control" id="FirstName" name="FirstName" >
+      <input type="text" class="form-control" id="FirstName" name="FirstName" style="text-transform: uppercase;">
 
       <label for="LastName" class="form-label">Last Name</label>
-      <input type="text" class="form-control" id="LastName"  name="LastName">
+      <input type="text" class="form-control" id="LastName"  name="LastName" style="text-transform: uppercase;">
 
       <label for="Age" class="form-label">Age</label>
       <input type="number" class="form-control" id="age" name="age" >
 
       <label for="Gender" class="form-label">Gender</label>
-      <input type="text" class="form-control" id="gender" name="gender" >
+
+
+      <select type="text" class="form-select" id="gender" name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
 
 
       <label for="Fonction" class="form-label">Fonction</label>

@@ -40,16 +40,21 @@
     <div class="container-sm p-5 my-5 border">
     <div class="mb-3">
       <label for="FirstName" class="form-label" >First Name</label>
-      <input type="text" class="form-control" id="FirstName" name="FirstName" value="{{ $client->FirstName }}">
+      <input type="text" class="form-control" id="FirstName" name="FirstName" value="{{ $client->FirstName }}" style="text-transform: uppercase;">
 
       <label for="LasttName" class="form-label">Last Name</label>
-      <input type="text" class="form-control" id="LasttName"  name="LastName" value="{{ $client->LastName }}" >
+      <input type="text" class="form-control" id="LasttName"  name="LastName" value="{{ $client->LastName }}" style="text-transform: uppercase;">
 
       <label for="Age" class="form-label">Age</label>
       <input type="number" class="form-control" id="Age" name="age" value="{{ $client->age }}" >
 
       <label for="Gender" class="form-label">Gender</label>
-      <input type="text" class="form-control" id="Gender" name="gender" value="{{ $client->gender }}" >
+      <select  class="form-select" id="gender" name="gender" value="{{ $client->gender }}" >
+
+        <option value="Male" {{$client->gender ==='Male' ? 'selected' :''}}>Male</option>
+      <option value="Female" {{$client->gender ==='Female' ? 'selected' :''}}>Female</option>
+
+      </select>
 
 
 
@@ -57,7 +62,7 @@
        <select type="select" class="form-select" id="idf" name="idf">
 
        @foreach ( $fonctions as $fonction)
-       <option @IF ($fonction->idfonction ==$client->idf ) selected @endif value="{{$fonction->idfonction}}">{{$fonction->Fonction}}</option>
+       <option @IF ($fonction->idfonction ==$client->idf ) selected @endif value="{{$fonction->idfonction}}" style="text-transform: uppercase;">{{$fonction->Fonction}}</option>
        @endforeach
 
 

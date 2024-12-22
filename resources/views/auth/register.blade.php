@@ -41,11 +41,11 @@
         <label for="name" class="form-label">Name</label>
         <input type="text" class="form-control" id="name" name="name" >
 
-      <label for="email" class="form-label">email</label>
+      <label for="email" class="form-label">Email</label>
       <input type="email" class="form-control" id="email" name="email" >
 
 
-      <label for="password" class="form-label">password</label>
+      <label for="password" class="form-label">Password</label>
       <input type="password" class="form-control" id="password" name="password" >
 
       <label for="password_confirmation" class="form-label">Confirm password</label>

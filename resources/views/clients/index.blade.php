@@ -91,12 +91,12 @@
             <tr>
                 <th scope="row">{{ $loop->iteration }}</th>
                 <td>{{ $client->idclient }}</td>
-                <td>{{ $client->FirstName }}</td>
-                <td>{{ $client->LastName }}</td>
-                <td>{{ $client->gender }}</td>
+                <td style=" text-transform:uppercase;">{{ $client->FirstName }}</td>
+                <td style=" text-transform:uppercase;">{{ $client->LastName }}</td>
+                <td style=" text-transform:uppercase;">{{ $client->gender }}</td>
                 <td>{{ $client->age }}</td>
 
-                <td>{{ $client->fonction ? $client->fonction->Fonction : 'No Fonction' }}</td>
+                <td style=" text-transform:uppercase;">{{ $client->fonction ? $client->fonction->Fonction : 'No Fonction' }}</td>
 
                 <td><a href="{{ route('clients.edit',  ['idclient' => $client->idclient]) }}" class="btn btn-success">Edit</a></td>
                 <td>

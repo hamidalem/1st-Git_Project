@@ -19,7 +19,7 @@
           </li>
 
 
-          
+
 
 
 
@@ -43,7 +43,7 @@
 
 
       <label for="Fonction" class="form-label">Fonction</label>
-      <input type="text" class="form-control" id="Fonction"  name="Fonction">
+      <input type="text" class="form-control" id="Fonction"  name="Fonction" style="text-transform: uppercase;">
 
 
        </select>

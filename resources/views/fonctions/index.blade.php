@@ -86,7 +86,7 @@
             <tr>
                 <th scope="row">{{ $loop->iteration }}</th>
                 <td>{{ $fonction->idfonction }}</td>
-                <td>{{ $fonction->Fonction }}</td>
+                <td style="text-transform: uppercase;">{{ $fonction->Fonction }}</td>
 
                 <td><a href="{{ route('fonctions.edit',  ['idfonction' => $fonction->idfonction]) }}" class="btn btn-success">Edit</a></td>
                 <td>

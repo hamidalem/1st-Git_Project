@@ -40,11 +40,11 @@
 <div class="container-fluid">
     <div class="container-sm p-5 my-5 border">
     <div class="mb-3">
-      <label for="email" class="form-label">email</label>
+      <label for="email" class="form-label">Email</label>
       <input type="email" class="form-control" id="email" name="email" >
 
 
-      <label for="password" class="form-label">password</label>
+      <label for="password" class="form-label">Password</label>
       <input type="password" class="form-control" id="password" name="password" >
 
 
