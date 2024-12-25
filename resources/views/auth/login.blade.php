@@ -33,7 +33,7 @@
     </div>
   </nav>
 
-
+<h3  class="btn bt" >Login Page</h3>
 
 <form method="post" action="{{route('login')}}">
     @csrf
